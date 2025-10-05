@@ -3,9 +3,8 @@ import pandas as pd
 import joblib
 import numpy as np
 import json
-import os
 
-model_path = os.path.join(current_dir, 'exoplanet_classifier_model.pkl')
+#To host to website locally, on the terminal run the command: streamlit run .\Classifier_App.py
 
 st.set_page_config(
     page_title="NASA Exoplanet Classifier",
@@ -170,3 +169,4 @@ with st.sidebar:
     st.write("XGBoost algorithm")
 
     st.write("19 physical parameters used")
+
