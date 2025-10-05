@@ -3,6 +3,9 @@ import pandas as pd
 import joblib
 import numpy as np
 import json
+import os
+
+model_path = os.path.join(current_dir, 'exoplanet_classifier_model.pkl')
 
 st.set_page_config(
     page_title="NASA Exoplanet Classifier",
@@ -12,7 +15,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_model():
-    model = joblib.load('exoplanet_classifier_model.pkl')
+    model = joblib.load(model_path)
     return model
 
 @st.cache_resource  
@@ -165,4 +168,5 @@ with st.sidebar:
     st.markdown("### Model Details")
     st.write("Trained on NASA Kepler data")
     st.write("XGBoost algorithm")
+
     st.write("19 physical parameters used")
