@@ -1,0 +1,1 @@
+{"feature_names": ["koi_period", "koi_impact", "koi_duration", "koi_depth", "koi_ror", "koi_srho", "koi_prad", "koi_sma", "koi_incl", "koi_teq", "koi_insol", "koi_dor", "koi_model_snr", "koi_bin_oedp_sig", "koi_steff", "koi_slogg", "koi_smet", "koi_srad", "koi_smass"], "class_names": [0, 1, 2]}
